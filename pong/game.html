@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pong Game</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <button class="back_btn" onclick="location.href='index.html'">Leave</button>
+    <canvas id="gameCanvas"></canvas>
+    <div id="winnerModal" class="modal"> 
+    <div class="modal-content">
+    <h2>Gratulálok nyertél!</h2> 
+    <p>Add meg a neved</p> 
+    <input type="text" id="winnerName" placeholder="Neved" required> 
+    <button class="nagyonszephover" onclick="submitWinner()">Küldés</button> </div> 
+</div>
+</body>
+</html>
