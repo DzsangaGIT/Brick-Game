@@ -18,7 +18,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         die("Error 69: üres név.");
     }
 
-    echo "Received name: $name, score: $score <br>";
+    echo "Név: $name, score: $score <br>";
 
 
     $stmt = $conn->prepare("INSERT INTO leaderboard (player_name, total_wins, total_score) 
